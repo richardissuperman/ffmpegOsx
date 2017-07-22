@@ -25,6 +25,7 @@
 		6B686BB91EF3E6A500B993CB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BB81EF3E6A500B993CB /* CoreFoundation.framework */; };
 		6B686BBB1EF3E7B900B993CB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BBA1EF3E7B900B993CB /* CoreMedia.framework */; };
 		6B686BBD1EF3E7BF00B993CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */; };
+		6BA4D5651F237ED700D0A223 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA4D5641F237ED700D0A223 /* libbz2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		6B686BB81EF3E6A500B993CB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		6B686BBA1EF3E7B900B993CB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6BA4D5641F237ED700D0A223 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B686BAD1EF3E40B00B993CB /* libiconv.tbd in Frameworks */,
+				6BA4D5651F237ED700D0A223 /* libbz2.tbd in Frameworks */,
 				6B3EC70C1EF7F81C00369109 /* Security.framework in Frameworks */,
 				6B686BBD1EF3E7BF00B993CB /* AVFoundation.framework in Frameworks */,
 				6B686BBB1EF3E7B900B993CB /* CoreMedia.framework in Frameworks */,
@@ -75,7 +79,6 @@
 				6B686BB31EF3E62600B993CB /* libz.tbd in Frameworks */,
 				6B686BB11EF3E4FA00B993CB /* VideoToolbox.framework in Frameworks */,
 				6B686BAF1EF3E4DB00B993CB /* AudioToolbox.framework in Frameworks */,
-				6B686BAD1EF3E40B00B993CB /* libiconv.tbd in Frameworks */,
 				6B686BA51EF3E39300B993CB /* libavcodec.a in Frameworks */,
 				6B686BA61EF3E39300B993CB /* libavdevice.a in Frameworks */,
 				6B686BA71EF3E39300B993CB /* libavfilter.a in Frameworks */,
@@ -117,6 +120,7 @@
 		6B686B9D1EF3E39100B993CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BA4D5641F237ED700D0A223 /* libbz2.tbd */,
 				6B3EC70B1EF7F81C00369109 /* Security.framework */,
 				6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */,
 				6B686BBA1EF3E7B900B993CB /* CoreMedia.framework */,
