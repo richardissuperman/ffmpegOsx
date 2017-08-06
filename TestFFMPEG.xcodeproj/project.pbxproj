@@ -25,6 +25,7 @@
 		6B686BB91EF3E6A500B993CB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BB81EF3E6A500B993CB /* CoreFoundation.framework */; };
 		6B686BBB1EF3E7B900B993CB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BBA1EF3E7B900B993CB /* CoreMedia.framework */; };
 		6B686BBD1EF3E7BF00B993CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */; };
+		6B83BB091F37127800A17B12 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B83BB081F37127800A17B12 /* libSDL2-2.0.0.dylib */; };
 		6BA4D5651F237ED700D0A223 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA4D5641F237ED700D0A223 /* libbz2.tbd */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		6B686BB81EF3E6A500B993CB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		6B686BBA1EF3E7B900B993CB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6B83BB081F37127800A17B12 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		6BA4D5641F237ED700D0A223 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B83BB091F37127800A17B12 /* libSDL2-2.0.0.dylib in Frameworks */,
 				6B686BAD1EF3E40B00B993CB /* libiconv.tbd in Frameworks */,
 				6BA4D5651F237ED700D0A223 /* libbz2.tbd in Frameworks */,
 				6B3EC70C1EF7F81C00369109 /* Security.framework in Frameworks */,
@@ -120,6 +123,7 @@
 		6B686B9D1EF3E39100B993CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B83BB081F37127800A17B12 /* libSDL2-2.0.0.dylib */,
 				6BA4D5641F237ED700D0A223 /* libbz2.tbd */,
 				6B3EC70B1EF7F81C00369109 /* Security.framework */,
 				6B686BBC1EF3E7BF00B993CB /* AVFoundation.framework */,
@@ -299,9 +303,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestFFMPEG/lib",
+					/usr/local/Cellar/sdl2/2.0.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/zhongqing/Documents/Tutorial/FFMpeg/C++Project/TestFFMPEG/TestFFMPEG/include";
@@ -312,9 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestFFMPEG/lib",
+					/usr/local/Cellar/sdl2/2.0.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/zhongqing/Documents/Tutorial/FFMpeg/C++Project/TestFFMPEG/TestFFMPEG/include";

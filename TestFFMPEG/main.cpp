@@ -13,6 +13,7 @@ extern "C"
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
 #include <libavutil/imgutils.h>
+#include <SDL2/SDL.h>
 };
 
 int main(int argc, const char * argv[]) {
@@ -35,6 +36,19 @@ int main(int argc, const char * argv[]) {
     avformat_network_init();
     pFormatCtx = avformat_alloc_context();
     
+    
+    //init SDL
+    
+    if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
+        printf("error!!!! init SDL");
+    }
+    else{
+        printf("Success!!!! init SDL");
+    }
+    
+    printf("version %s \n",LIBAVCODEC_IDENT);
+    printf("AAC codec name %s.\n",avcodec_find_decoder_by_name("aac")->name);
+
     if(avformat_open_input(&pFormatCtx,filepath,NULL,NULL)!=0){
         printf("Couldn't open input stream.\n");
         return -1;
